@@ -76,7 +76,6 @@ li {
     height: 60px;
     align-items: center;
     background-color: #F6F6F6;
-
 }
 
 .icons_fonctionnement {
@@ -147,10 +146,7 @@ p {
     display: flex;
     margin: 5px;
     margin-left: 15px;
-    font-size: 15px;
 }
-
-
 
 
 footer {
@@ -166,6 +162,12 @@ footer h3 {
     margin: 0;
 }
 
+.fa-mobile-screen-button, .fa-list-ul{
+    color: #7e7e7e;
+}
+.fa-store{
+    color: #9356DC;
+}
 .fa-utensils {
     margin-right: 10px;
 }
@@ -179,7 +181,7 @@ footer h3 {
     align-items: center;
 }
 
-.fa-solid {
+footer .fa-solid {
     color: #F7F7F7;
 }
 
