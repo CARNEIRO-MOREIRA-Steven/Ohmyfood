@@ -10,13 +10,27 @@ body {
 }
 
 header {
+  margin-top: 10px;
+}
+
+.logo_and_back{
     display: flex;
     justify-content: center;
 }
 
 #logo {
-    height: 30px;
     margin: 10px;
+    width: 45%;
+}
+
+.localisation{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+    color: #353535;
+    font-size:20px;
 }
 
 .intro {
@@ -27,10 +41,9 @@ header {
     padding-top: 30px;
 }
 
-h1,
-p {
+.intro p, h1{
     margin: 5px;
-    width: 80%;
+    width: 70%;
     text-align: center;
 }
 
@@ -42,7 +55,6 @@ p {
     margin-top: 10px;
     border-radius: 20px;
     border: none;
-    height: 35px;
     background: linear-gradient(#9356DC, #FF79DA);
     color: white;
     padding: 10px;
