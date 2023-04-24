@@ -23,6 +23,11 @@ img{
     width: 100%;
   }
 
+section img{
+    height: 215px;
+    object-fit: cover;
+}
+
   section{
     padding: 0;
   }
