@@ -221,14 +221,15 @@ footer p {
     color: #FFFFFF;
 }
 
-@media (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) {
 
     section{
-        padding: 0px 150px ;
+        padding: 0px 50px ;
     }
 
     #logo{
-        width: 150px;
+        margin: 25px;
+        width: 200px;
     }
 
     .fonctionnement{
@@ -265,7 +266,7 @@ footer p {
     }
 
     a{
-        width: 48%;
+        width: 47%;
     }
 
     #restaurants{
@@ -283,3 +284,16 @@ footer p {
         padding-right: 50px;
     }
 }
+@media screen and (min-width: 1024px) {
+    
+        section {
+            padding: 0px 100px;
+        }
+    
+
+@media screen and (min-width: 1440px) {
+  
+    section{
+        padding: 0px 200px;
+    }
+}}

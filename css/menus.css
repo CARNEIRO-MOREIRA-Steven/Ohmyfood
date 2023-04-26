@@ -49,7 +49,8 @@ section {
     background-color: #F7F7F7;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     position: relative;
     bottom: 30px;
 }
@@ -168,6 +169,7 @@ footer h3 {
 .footer_icons {
     display: flex;
     align-items: center;
+    margin-right: 15px;
 }
 
 .fa-solid {
@@ -180,4 +182,83 @@ footer p {
 }
 
 
-@media sreen and (min-width: 768px) {}
+@media screen and (min-width: 769px) {
+
+    main{
+        background-color: #FFFFFF;
+        margin: 0;
+    }
+
+    span img{
+        height: 400px;
+    }
+
+    section{
+        margin: 0px 50px ;
+    }
+
+    #logo{
+        width: 200px;
+        margin: 25px;
+    }
+
+    .border_list{
+        margin-bottom: 10px;
+        width: 5%;
+    }
+
+    .name_restaurant{
+        justify-content: center;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .menus {
+        padding: 20px 50px;
+    
+    }
+    button{
+        width: 150px;
+        height: 40px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-right: 50px;
+    }
+
+    .content_footer{
+        display: flex;
+        padding-right: 50px;
+        align-items: center;
+    }
+
+    footer p{
+        margin-right: 15px;
+    }
+
+    .fa-arrow-left::before{
+        position: absolute;
+        left: 25px;
+        top: 40px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menus{
+        padding: 20px 150px;
+    }
+
+    section{
+       margin:0 100px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .menus{
+        padding: 20px 200px;
+    }
+}
