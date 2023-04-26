@@ -67,7 +67,7 @@ p {
     margin-bottom: 30px;
 }
 
-.fonctionnement {
+.fonctionnement_liste {
     padding: 0;
     margin-bottom: 50px;
 }
@@ -221,5 +221,65 @@ footer p {
     color: #FFFFFF;
 }
 
+@media (min-width: 769px) and (max-width: 1440px) {
 
-@media sreen and (min-width: 768px) {}
+    section{
+        padding: 0px 150px ;
+    }
+
+    #logo{
+        width: 150px;
+    }
+
+    .fonctionnement{
+        padding-top: 20px;
+    }
+
+    .fonctionnement_liste{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    section ol{
+        display: flex;
+    }
+
+    ol li::before{
+        position:relative;
+    }
+
+    ol li::before{
+        left: -13px;
+    }
+
+    li{
+        padding: 0;
+        width: 100%;
+    }
+
+    .cards{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    a{
+        width: 48%;
+    }
+
+    #restaurants{
+        padding-bottom: 20px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 50px;
+    }
+
+    .content_footer{
+        display: flex;
+        padding-right: 50px;
+    }
+}
