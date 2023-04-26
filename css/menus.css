@@ -35,7 +35,7 @@ header {
     width: 45%;
 }
 
-section img {
+span img {
     height: 215px;
     width: 100%;
     object-fit: cover;
@@ -58,7 +58,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
 }
 
 .name_restaurant i {
@@ -80,7 +79,7 @@ h2 {
 }
 
 h3 {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .border_list {
@@ -102,9 +101,9 @@ h3 {
 .description_menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-left: 15px;
-    width: 85%;
+    width: 80%;
 }
 
 .description_menu h3,
@@ -120,9 +119,9 @@ p {
 .price_menu {
     display: flex;
     align-items: flex-end;
-    width: 15%;
+    width: 20%;
     justify-content: center;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
 
 }
 
@@ -132,12 +131,10 @@ button {
     border: none;
     background: linear-gradient(190deg, #9356DC, #FF79DA);
     color: white;
-    padding: 10px;
     display: flex;
     align-items: center;
     width: 50%;
     height: 40px;
-    text-align: center;
     justify-content: center;
 }
 
