@@ -43,9 +43,15 @@ header {
 
 .intro p, h1{
     margin: 5px;
-    width: 70%;
+    width: 75%;
     text-align: center;
 }
+
+.intro p {
+    width: 80%;
+    font-size: 15px;
+}
+
 
 p {
     font-size: 15px;
@@ -63,10 +69,7 @@ p {
 
 .fonctionnement {
     padding: 0;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 50px;
-    font-weight: 500;
 }
 
 ol li{
@@ -93,7 +96,7 @@ ol li::before{
 li {
     display: flex;
     padding-left: 30px;
-    margin: 10px 20px;
+    margin: 20px;
     border-radius: 15px;
     height: 60px;
     align-items: center;
@@ -121,18 +124,24 @@ a {
     width: 100%;
 }
 
-.cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .card {
-    margin: 10px;
-    height: 220px;
+    margin: 20px 10px;
     border-radius: 15px;
     background-color: white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.new_restaurant{
+    position: absolute;
+    background-color: #99E2D0;
+    right: 15px;
+    top: 15px;
+    border-radius: 2px;
+}
+
+.new_restaurant p{
+    color: #008766;
+    margin: 7px;
 }
 
 .card img {
@@ -149,11 +158,11 @@ a {
 }
 
 .card-text {
-    width: 60%;
+    width: 70%;
 }
 
 .icon_card {
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: flex-end;
 }
@@ -165,9 +174,9 @@ a {
 
 .card h3,
 p {
-    margin: 5px;
     margin-left: 15px;
-    font-size: 17px;
+    font-size: 15px;
+    margin: 10px;
 }
 
 
