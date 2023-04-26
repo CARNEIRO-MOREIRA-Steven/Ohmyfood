@@ -217,6 +217,7 @@ footer .fa-solid {
 }
 
 footer p {
+    margin: 5px;
     margin-left: 0;
     color: #FFFFFF;
 }
@@ -279,15 +280,19 @@ footer p {
         padding: 50px;
     }
 
+    footer p{
+        margin-right: 10px;
+    }
+
     .content_footer{
         display: flex;
-        padding-right: 50px;
+        padding-right: 20px;
     }
 }
 @media screen and (min-width: 1024px) {
     
         section {
-            padding: 0px 100px;
+            padding: 0px 150px;
         }
     
 
@@ -296,4 +301,9 @@ footer p {
     section{
         padding: 0px 200px;
     }
+
+    .content_footer{
+        padding-right: 80px;
+    }
+
 }}

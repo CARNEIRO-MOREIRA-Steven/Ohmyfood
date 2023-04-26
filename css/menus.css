@@ -104,7 +104,7 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 15px;
-    width: 80%;
+    width: 90%;
 }
 
 .description_menu h3,
@@ -120,7 +120,7 @@ p {
 .price_menu {
     display: flex;
     align-items: flex-end;
-    width: 20%;
+    width: 10%;
     justify-content: center;
     padding-bottom: 10px;
 
@@ -253,7 +253,7 @@ footer p {
     }
 
     section{
-       margin:0 100px;
+       margin:0 150px;
     }
 }
 
