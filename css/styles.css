@@ -159,17 +159,12 @@ a {
 
 .card-content {
     display: flex;
-    align-items: center;
-}
-
-.card-text {
-    width: 70%;
+    justify-content: space-between;
 }
 
 .icon_card {
-    width: 30%;
     display: flex;
-    justify-content: flex-end;
+    padding-top: 20px;
 }
 
 .fa-heart {
@@ -270,7 +265,7 @@ footer p {
         justify-content: space-between;
     }
 
-    a{
+    article {
         width: 47%;
     }
 
@@ -296,7 +291,12 @@ footer p {
 @media screen and (min-width: 1024px) {
     
         section {
-            padding: 0px 150px;
+            padding: 0px 100px;
+        }
+
+        .card{
+            width: 45%;
+
         }
     
 
@@ -309,5 +309,6 @@ footer p {
     .content_footer{
         padding-right: 80px;
     }
+
 
 }}
