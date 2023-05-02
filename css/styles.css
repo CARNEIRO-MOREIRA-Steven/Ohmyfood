@@ -124,9 +124,11 @@ section h2 {
 }
 
 a {
+    display: flex;
     text-decoration: none;
     color: #000000;
     width: 100%;
+    flex-direction: column;
 }
 
 .card {
@@ -159,22 +161,32 @@ a {
 
 .card-content {
     display: flex;
-    align-items: center;
-}
-
-.card-text {
-    width: 70%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .icon_card {
-    width: 30%;
     display: flex;
-    justify-content: flex-end;
+    cursor: pointer;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .fa-heart {
     font-size: 20px;
-    margin-right: 30px;
+    right: 20px;
+    bottom: 30px;
+    position: absolute;
+    transition: 500ms;
+}
+
+.fa-heart:hover{
+    color: #9356DC;  
+}
+
+.fa-heart:not(:hover){ 
+    font-weight: 100;
+    color: black;
 }
 
 .card h3,
@@ -256,9 +268,6 @@ footer p {
 
     ol li::before{
         position:relative;
-    }
-
-    ol li::before{
         left: -13px;
     }
 
@@ -274,7 +283,7 @@ footer p {
         justify-content: space-between;
     }
 
-    a{
+    article {
         width: 47%;
     }
 
@@ -300,7 +309,12 @@ footer p {
 @media screen and (min-width: 1024px) {
     
         section {
-            padding: 0px 150px;
+            padding: 0px 100px;
+        }
+
+        .card{
+            width: 45%;
+
         }
     
 
@@ -313,5 +327,6 @@ footer p {
     .content_footer{
         padding-right: 80px;
     }
+
 
 }}
