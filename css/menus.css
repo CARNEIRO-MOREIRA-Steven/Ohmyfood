@@ -120,7 +120,8 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 15px;
-    width: 85%;
+    width: 100%;
+    margin-right: 5px;
 }
 
 .description_menu h3,
@@ -136,28 +137,36 @@ p {
 .price_menu {
     display: flex;
     align-items: flex-end;
-    width: 15%;
-    padding-bottom: 10px;
-    justify-content: flex-end;
-    margin-right: 10px;
     font-size: 14px;
+    cursor: pointer;
+    font-weight: bold; 
 }
 
-.price_menu:active{
-    animation-name: translate-price;
-    transform: translateX(-50px);
+.price_value {
+    padding-bottom: 10px;
 }
 
-@keyframes translate-price{
-    0%{
-        transform: scaleX(0);
-    }
+  .logo_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: #99E2D0;
+    opacity: 0; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .price_menu:active .logo_menu {
+    opacity: 1;
+    height: 100%;
+    width: 50px;
+    margin-left: 10px;
+  }
 
-    100%{
-        transform: scaleX(-50px);
-    }
-    
-}
+  .price_menu:active {
+    transform: translateX(1);
+  }
 
 button {
     margin-top: 25px;
