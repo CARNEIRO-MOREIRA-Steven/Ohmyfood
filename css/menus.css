@@ -143,6 +143,10 @@ p {
     font-size: 14px;
 }
 
+@keyframes translate-price{
+    
+}
+
 button {
     margin-top: 25px;
     border-radius: 20px;
