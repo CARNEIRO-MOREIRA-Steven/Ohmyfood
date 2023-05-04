@@ -148,7 +148,7 @@ p {
 
 .price_value {
     padding-bottom: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
   .logo_menu {
@@ -161,8 +161,7 @@ p {
     height: 100% ;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-   
-    
+    font-size: 20px;
   }
 
   .logo_menu i{
@@ -171,12 +170,11 @@ p {
   
   .price_menu:hover .logo_menu{
         animation: price-check 750ms;
-        animation-fill-mode: forwards;
-        font-size: 20px;
+        animation-fill-mode: both;    
     }
 
     .price_menu:not(:hover) .logo_menu{
-        animation: price-check-return 750ms;font-size: 20px;
+        animation: price-check-return 750ms both
     }
 
 @keyframes price-check{
