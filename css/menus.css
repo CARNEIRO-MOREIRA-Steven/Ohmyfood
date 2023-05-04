@@ -148,6 +148,7 @@ p {
 
 .price_value {
     padding-bottom: 10px;
+    padding-right: 10px;
 }
 
   .logo_menu {
@@ -170,6 +171,7 @@ p {
   
   .price_menu:hover .logo_menu{
         animation: price-check 750ms;
+        animation-fill-mode: forwards;
         font-size: 20px;
     }
 
@@ -195,7 +197,7 @@ p {
     100% {
         transform: translateX(1);
         width: 60px;
-
+        
     }
 }
 button {
