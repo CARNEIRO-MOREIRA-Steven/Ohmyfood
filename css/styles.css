@@ -274,6 +274,7 @@ footer p {
     li{
         padding: 0;
         width: 100%;
+        margin: 5px;
     }
 
     .cards{
@@ -315,6 +316,10 @@ footer p {
         .card{
             width: 45%;
 
+        }
+
+        li{
+            margin: 20px;
         }
     
 
