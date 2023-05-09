@@ -1,3 +1,4 @@
+/* loader */
 .loader {
     position: fixed;
     top: 0;
@@ -8,17 +9,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Pour s'assurer que le loader est au-dessus de tout le reste du contenu */
-    animation: loader 2s ease-in 3s both ;
+    /* au-dessus de tout le reste du contenu */
+    z-index: 9999;
+    /* rendre le loader progressivement invisible */
+    animation: loader 2s ease-in 1s both ;
+}
 
-  }
-
+/* Keyframes pour l'animation du loader */
   @keyframes loader{
     from{
         opacity: 1;
         transform: scale(1);
     }
-    
     to{
         opacity: 0.9;
         visibility: hidden;
@@ -26,54 +28,61 @@
     }
   }
   
+/* boîte du loader */
   .box-1 {
     height: 300px;
     width: 300px;
-    background-image: linear-gradient(190deg, #9356DC, #FF79DA);
     border-radius: 50%;
-    animation: rotate 5s linear infinite;
+    background-image: linear-gradient(190deg, #9356DC, #FF79DA);
+    /* Ombre pour donner de la profondeur */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    /* rotation continue */
+    animation: rotate 5s linear infinite;
   }
   
+/* Keyframes pour l'animation de rotation */
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
     }
-  
     100% {
       transform: rotate(360deg);
     }
   }
   
+/* Pseudo-élément pour ajouter un fond intérieur à la boîte */
   .box-1::before {
     content: '';
     position: absolute;
     inset: 15px;
+    /* Fond noir pour le contraste */
     background: #353535;
     border-radius: 50%;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   }
   
+/* texte loader */
   .loader span {
     position: absolute;
     font-family: 'Shrikhand', cursive;
     letter-spacing: 2px;
     font-size: 2rem;
+    /* Animation pour faire clignoter le texte */
     animation: text-animate412 3s linear infinite;
   }
-  
+
+/* Keyframes pour l'animation du texte */ 
   @keyframes text-animate412 {
   
     10% {
       opacity: 1;
     }
-  
     100% {
       opacity: 0;
     }
   }
 
-
+/* body */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -85,6 +94,7 @@ body {
     --filter-bg-color: #FF79DA;
 }
 
+/*header*/
 header {
   margin-top: 10px;
 }
@@ -109,6 +119,7 @@ header {
     font-size:20px;
 }
 
+/* section intro */
 .intro {
     display: flex;
     flex-direction: column;
@@ -148,6 +159,7 @@ button:hover {
     filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.5));
   }
 
+/* section fonctionnement */
 .fonctionnement_liste {
     padding: 0;
     margin-bottom: 50px;
@@ -188,6 +200,15 @@ li {
     padding-left: 5px;
 }
 
+/* icons liste */
+.fa-mobile-screen-button, .fa-list-ul{
+    color: #7e7e7e;
+}
+.fa-store{
+    color: #9356DC;
+}
+
+/* section restaurants */
 #restaurants {
     padding-top: 20px;
     padding-bottom: 50px;
@@ -241,6 +262,13 @@ a {
     justify-content: flex-end;
 }
 
+.card h3,
+p {
+    margin-left: 15px;
+    margin: 10px;
+}
+
+/* icon coeur */
 .icon_card {
     display: flex;
     cursor: pointer;
@@ -267,13 +295,9 @@ a {
     color: black;
 }
 
-.card h3,
-p {
-    margin-left: 15px;
-    margin: 10px;
-}
 
 
+/* footer */
 footer {
     background-color: #353535;
     padding: 20px;
@@ -291,12 +315,13 @@ footer a{
     color: #FFFFFF;
 }
 
-.fa-mobile-screen-button, .fa-list-ul{
-    color: #7e7e7e;
+footer p {
+    margin: 5px;
+    margin-left: 0;
+    color: #FFFFFF;
 }
-.fa-store{
-    color: #9356DC;
-}
+
+/* icons footer */
 .fa-utensils {
     margin-right: 10px;
 }
@@ -314,12 +339,9 @@ footer .fa-solid {
     color: #F7F7F7;
 }
 
-footer p {
-    margin: 5px;
-    margin-left: 0;
-    color: #FFFFFF;
-}
 
+
+/* responsive tablette */
 @media screen and (min-width: 768px) {
 
     section{
@@ -385,6 +407,8 @@ footer p {
         padding-right: 20px;
     }
 }
+
+/* responsive pc */
 @media screen and (min-width: 1024px) {
     
         section {
@@ -399,8 +423,9 @@ footer p {
         li{
             margin: 20px;
         }
+    }
     
-
+/* responsive pc large */
 @media screen and (min-width: 1440px) {
   
     section{
@@ -410,6 +435,4 @@ footer p {
     .content_footer{
         padding-right: 80px;
     }
-
-
-}}
+}
