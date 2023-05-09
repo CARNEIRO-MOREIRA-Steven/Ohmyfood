@@ -1,3 +1,4 @@
+/* body */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -6,13 +7,9 @@ main {
     background-color: #F7F7F7;
 }
 
-.fa-arrow-left::before {
-    color: #353535;
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-}
 
+
+/* header */
 header {
     margin-top: 10px;
     width: 100%;
@@ -35,12 +32,21 @@ header {
     width: 45%;
 }
 
+.fa-arrow-left::before {
+    color: #353535;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+/* image restaurant */
 span img {
     height: 215px;
     width: 100%;
     object-fit: cover;
 }
 
+/* section */
 section {
     padding: 0;
 }
@@ -62,15 +68,14 @@ section {
     margin: 0px 10px;
 }
 
-.name_restaurant i {
+/* icon coeur */
+.fa-heart {
+    font-size: 20px;
     cursor: pointer;
     margin-right: 15px;
 }
 
-.fa-heart {
-    font-size: 20px;
-}
-
+/* survole du cœur */
 .fa-heart:hover {
     background: linear-gradient(to bottom, #9356DC, #FF79CD);
     background-clip: text;
@@ -78,11 +83,13 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
+/* ne survole pas le cœur */
 .fa-heart:not(:hover){ 
     font-weight: 100;
     color: black;
 }
 
+/* titres */
 h1 {
     font-family: 'Shrikhand';
     margin: 0;
@@ -101,12 +108,14 @@ h3 {
     font-size: 15px;
 }
 
+/* composition menu */
 .border_list {
     border-bottom: solid #99E2D0;
     width: 10%;
     margin-left: 10px;
 }
 
+/* plats */
 .card {
     display: flex;
     flex-direction: row;
@@ -115,23 +124,19 @@ h3 {
     border-radius: 25px;
     margin: 5px;
     height: 70px;
-}
-
-.card {
     animation-name: appear;
     animation-duration: 5s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-  }
+    animation-fill-mode: forwards/* Garde le style final de l'animation */;
+}
   
   @keyframes appear {
     from {
       opacity: 0;
-      transform: translateY(50px);
+      transform: translateX(100px);
     }
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateX(0);
     }
   }
 
@@ -177,7 +182,7 @@ p {
     align-items: center;
     background-color: #99E2D0;
     color: white;
-    opacity: 0; 
+    opacity: 0; /* On cache le contenu par défaut */
     height: 100% ;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -188,19 +193,22 @@ p {
     overflow: hidden;
   }
   
+  /* animation menu */
   .price_menu:hover .logo_menu{
+  /* se déclenche au passage de la souris sur .price_menu */
         animation: price-check 750ms;
         animation-fill-mode: both;    
     }
 
     .price_menu:not(:hover) .logo_menu{
+    /* se déclenche lorsqu'on enlève la souris*/
         animation: price-check-return 750ms both
     }
 
 @keyframes price-check{
+  /* déplace le contenu de vers la gauche */
     0% {
         transform: translateX(0px);
-        transform-origin: right 100%;
         width: 0px;
     }
     1%,100% {
@@ -223,9 +231,9 @@ p {
 }
 
 @keyframes price-check-return{
+  /* replace le contenu vers la droite */
     0% {
         transform: translateX(1px);
-        transform-origin: left 100%;
         width: 60px;
     }
     1%,99% {
@@ -247,6 +255,7 @@ p {
     }
 }
 
+/* button */
 button {
     margin-top: 25px;
     border-radius: 20px;
@@ -266,12 +275,12 @@ button:hover {
     filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.5));
   }
 
-
 .btn_commander {
     display: flex;
     justify-content: center;
 }
 
+/* footer */
 footer {
     background-color: #353535;
     padding: 20px;
@@ -286,6 +295,17 @@ footer h3 {
     padding-bottom: 10px;
 }
 
+footer p {
+    color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+footer a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* icons footer */
 .fa-utensils {
     margin-right: 10px;
 }
@@ -304,16 +324,7 @@ footer h3 {
     color: #F7F7F7;
 }
 
-footer p {
-    color: #FFFFFF;
-    padding-bottom: 5px;
-}
-
-footer a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
+/* responsive tablette */
 @media screen and (min-width: 769px) {
 
     main{
@@ -379,6 +390,7 @@ footer a{
     }
 }
 
+/* reponsive pc */
 @media screen and (min-width: 1024px) {
     .menus{
         padding: 20px 150px;
@@ -389,6 +401,7 @@ footer a{
     }
 }
 
+/* responsive pc large */
 @media screen and (min-width: 1440px) {
     .menus{
         padding: 20px 200px;
