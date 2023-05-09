@@ -69,11 +69,13 @@ section {
 
 .fa-heart {
     font-size: 20px;
-    transition: 500ms;
 }
 
-.fa-heart:hover{
-    color: #9356DC;  
+.fa-heart:hover {
+    background: linear-gradient(to bottom, #9356DC, #FF79CD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-heart:not(:hover){ 
@@ -197,7 +199,7 @@ p {
 
 @keyframes price-check{
     0% {
-        transform: translateX(0);
+        transform: translateX(0px);
         transform-origin: right 100%;
         width: 0px;
     }
@@ -240,7 +242,7 @@ p {
     }
     
     100% {
-        transform: translateX(0);
+        transform: translateX(0px);
         width: 0px;
     }
 }
