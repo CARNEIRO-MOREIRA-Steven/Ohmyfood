@@ -69,11 +69,12 @@ section {
 
 .fa-heart {
     font-size: 20px;
-    transition: 500ms;
 }
 
-.fa-heart:hover{
-    color: #9356DC;  
+.fa-heart:hover {
+    background: linear-gradient(to bottom, #9356DC, #FF79CD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-heart:not(:hover){ 
