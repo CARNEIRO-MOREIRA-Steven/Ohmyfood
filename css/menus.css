@@ -115,6 +115,7 @@ h3 {
     border-radius: 25px;
     margin: 5px;
     height: 70px;
+    cursor: pointer;
     animation-name: appear;
     animation-duration: 5s;
     animation-fill-mode: forwards
@@ -160,7 +161,6 @@ p {
     display: flex;
     align-items: flex-end;
     font-size: 14px;
-    cursor: pointer;
     font-weight: bold;
 }
 
@@ -176,6 +176,7 @@ p {
     background-color: #99E2D0;
     color: white;
     opacity: 0;
+    overflow: hidden;
     /* On cache le contenu par défaut */
     height: 100%;
     border-top-right-radius: 25px;
@@ -184,13 +185,13 @@ p {
 }
 
 /* animation menu */
-.price_menu:hover .logo_menu {
+.card:hover .logo_menu {
     /* se déclenche au passage de la souris sur .price_menu */
     animation: price-check 750ms;
     animation-fill-mode: both;
 }
 
-.price_menu:not(:hover) .logo_menu {
+.card:not(:hover) .logo_menu {
     /* se déclenche lorsqu'on enlève la souris*/
     animation: price-check-return 750ms both
 }
