@@ -116,11 +116,18 @@ h3 {
     margin: 5px;
     height: 70px;
     cursor: pointer;
-    animation-name: appear;
-    animation-duration: 5s;
-    animation-fill-mode: forwards
-        /* Garde le style final de l'animation */
-    ;
+   
+}
+.entrees {
+    animation: appear 3s  forwards;
+} 
+
+.plats {
+    animation: appear 3s 3s both ;
+}
+
+.desserts {
+    animation: appear 3s 6s both;
 }
 
 @keyframes appear {

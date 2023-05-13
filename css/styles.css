@@ -12,24 +12,25 @@
     /* au-dessus de tout le reste du contenu */
     z-index: 9999;
     /* rendre le loader progressivement invisible */
-    animation: loader 2s ease-in 1s both ;
+    animation: loader 1.5s ease-in 3s both;
 }
 
 /* Keyframes pour l'animation du loader */
-  @keyframes loader{
-    from{
+@keyframes loader {
+    from {
         opacity: 1;
         transform: scale(1);
     }
-    to{
-        opacity: 0.9;
+
+    to {
+        opacity: 0;
         visibility: hidden;
         transform: scale(0);
     }
-  }
-  
+}
+
 /* boîte du loader */
-  .box-1 {
+.box-1 {
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -37,50 +38,52 @@
     /* Ombre pour donner de la profondeur */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
     /* rotation continue */
-    animation: rotate 5s linear infinite;
-  }
-  
+    animation: rotate 3s linear infinite;
+}
+
 /* Keyframes pour l'animation de rotation */
-  @keyframes rotate {
+@keyframes rotate {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
+}
+
 /* Pseudo-élément pour ajouter un fond intérieur à la boîte */
-  .box-1::before {
+.box-1::before {
     content: '';
     position: absolute;
     inset: 15px;
     /* Fond noir pour le contraste */
     background: #353535;
     border-radius: 50%;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-  }
-  
+    box-shadow: rgb(4, 6, 7) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
 /* texte loader */
-  .loader span {
+.loader span {
     position: absolute;
     font-family: 'Shrikhand', cursive;
     letter-spacing: 2px;
     font-size: 2rem;
     /* Animation pour faire clignoter le texte */
     animation: text-animate412 3s linear infinite;
-  }
+}
 
-/* Keyframes pour l'animation du texte */ 
-  @keyframes text-animate412 {
-  
+/* Keyframes pour l'animation du texte */
+@keyframes text-animate412 {
+
     10% {
-      opacity: 1;
+        opacity: 1;
     }
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
 
 /* body */
 body {
@@ -96,10 +99,10 @@ body {
 
 /*header*/
 header {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
-.logo_and_back{
+.logo_and_back {
     display: flex;
     justify-content: center;
 }
@@ -109,14 +112,14 @@ header {
     width: 45%;
 }
 
-.localisation{
+.localisation {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #EAEAEA;
     color: #353535;
-    font-size:20px;
+    font-size: 20px;
 }
 
 /* section intro */
@@ -128,7 +131,8 @@ header {
     padding-top: 30px;
 }
 
-.intro p, h1{
+.intro p,
+h1 {
     margin: 5px;
     width: 75%;
     text-align: center;
@@ -143,7 +147,7 @@ p {
     font-size: 15px;
 }
 
-button{
+button {
     margin-top: 10px;
     border-radius: 20px;
     border: none;
@@ -157,7 +161,7 @@ button:hover {
     opacity: 0.8;
     transition: 0.5s;
     filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.5));
-  }
+}
 
 /* section fonctionnement */
 .fonctionnement_liste {
@@ -165,11 +169,11 @@ button:hover {
     margin-bottom: 50px;
 }
 
-ol li{
+ol li {
     counter-increment: compteur;
-  }
+}
 
-ol li::before{
+ol li::before {
     content: counters(compteur, "") " ";
     background-color: #9356DC;
     color: white;
@@ -201,10 +205,12 @@ li {
 }
 
 /* icons liste */
-.fa-mobile-screen-button, .fa-list-ul{
+.fa-mobile-screen-button,
+.fa-list-ul {
     color: #7e7e7e;
 }
-.fa-store{
+
+.fa-store {
     color: #9356DC;
 }
 
@@ -236,7 +242,7 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.new_restaurant{
+.new_restaurant {
     position: absolute;
     background-color: #99E2D0;
     right: 15px;
@@ -245,7 +251,7 @@ a {
     z-index: 1;
 }
 
-.new_restaurant p{
+.new_restaurant p {
     color: #008766;
     margin: 7px;
 }
@@ -300,7 +306,7 @@ footer h3 {
     margin: 0;
 }
 
-footer a{
+footer a {
     color: #FFFFFF;
 }
 
@@ -333,40 +339,40 @@ footer .fa-solid {
 /* responsive tablette */
 @media screen and (min-width: 768px) {
 
-    section{
-        padding: 0px 30px ;
+    section {
+        padding: 0px 30px;
     }
 
-    #logo{
+    #logo {
         margin: 25px;
         width: 200px;
     }
 
-    .fonctionnement{
+    .fonctionnement {
         padding-top: 20px;
     }
 
-    .fonctionnement_liste{
+    .fonctionnement_liste {
         margin-bottom: 15px;
         width: 100%;
     }
 
-    section ol{
+    section ol {
         display: flex;
     }
 
-    ol li::before{
-        position:relative;
+    ol li::before {
+        position: relative;
         left: -13px;
     }
 
-    li{
+    li {
         padding: 0;
         width: 100%;
         margin: 10px;
     }
 
-    .cards{
+    .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -376,21 +382,21 @@ footer .fa-solid {
         width: 45%;
     }
 
-    #restaurants{
+    #restaurants {
         padding-bottom: 20px;
     }
 
-    footer{
+    footer {
         display: flex;
         flex-direction: row-reverse;
         padding: 50px;
     }
 
-    footer p{
+    footer p {
         margin-right: 10px;
     }
 
-    .content_footer{
+    .content_footer {
         display: flex;
         padding-right: 20px;
     }
@@ -398,24 +404,24 @@ footer .fa-solid {
 
 /* responsive pc */
 @media screen and (min-width: 1024px) {
-    
-        section {
-            padding: 0px 100px;
-        }
 
-        li{
-            margin: 30px;
-        }
+    section {
+        padding: 0px 100px;
     }
-    
+
+    li {
+        margin: 30px;
+    }
+}
+
 /* responsive pc large */
 @media screen and (min-width: 1440px) {
-  
-    section{
+
+    section {
         padding: 0px 200px;
     }
 
-    .content_footer{
+    .content_footer {
         padding-right: 80px;
     }
 }
